@@ -4,7 +4,14 @@
     "name": "Trueman Ingestion Agent",
     "description": "Read-only catalogue ingestion agent for True Manufacturing product data. Reads product metadata in batches, honours Retry-After, makes no purchases and holds no payment capability.",
     "services": {},
-    "capabilities": {},
+    "capabilities": {
+      "dev.ucp.shopping.catalog.search": [
+        { "version": "2026-08-25" }
+      ],
+      "dev.ucp.shopping.catalog.lookup": [
+        { "version": "2026-08-25" }
+      ]
+    },
     "payment_handlers": {}
   }
 }
